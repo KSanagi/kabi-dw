@@ -498,7 +498,7 @@ static void print_die(Dwarf *dbg, FILE *parent_file, Dwarf_Die *cu_die,
 		fprintf(fout, "%s\n", name);
 		break;
 	case DW_TAG_pointer_type:
-		fprintf(fout, "* ");
+		fprintf(fout, "*");
 		print_die_type(dbg, fout, cu_die, die, conf);
 		break;
 	case DW_TAG_structure_type:
